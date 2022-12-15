@@ -2,21 +2,28 @@
   <v-app>
     <v-main>
       <TopMenu/>
-      <HelloWorld/>
+      <MainPage/>
+      <BootemContent/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TopMenu from './components/TopMenu.vue'
+// Pages
+import MainPage from './components/MainPage.vue'
+
+// /layout
+import TopMenu from './components/common/TopMenu.vue'
+import BootemContent from './components/common/BottomContent.vue'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
-    TopMenu
+    MainPage,
+
+    TopMenu,
+    BootemContent
   },
 
   data: () => ({
